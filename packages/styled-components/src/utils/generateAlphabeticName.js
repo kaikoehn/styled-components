@@ -19,5 +19,5 @@ export default function generateAlphabeticName(code: number): string {
     name = getAlphabeticChar(x % charsLength) + name;
   }
 
-  return getAlphabeticChar(x % charsLength) + name;
+  return `pickit-${  getAlphabeticChar(x % charsLength)  }${name}`;
 }
